@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI 소모임 (밸런스형)</title>
+  <meta name="description" content="AI를 어렵지 않게, 재미있게 배우는 밸런스형 소모임. 스터디·토론·실습으로 함께 성장해요." />
+  <meta property="og:title" content="AI 소모임 (밸런스형)" />
+  <meta property="og:description" content="AI를 어렵지 않게, 재미있게 배우는 밸런스형 소모임. 스터디·토론·실습으로 함께 성장해요." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop" />
+  <meta property="og:image:alt" content="푸른 네트워크 일러스트" />
+  <meta property="og:locale" content="ko_KR" />
+  <style>
+    :root{--blue:#2563EB;--mint:#10B981;--bg:#F9FAFB;--ink:#111827;--ink2:#374151;--card:#FFFFFF;--muted:#E5E7EB;--radius:18px;}
+    html,body{height:100%} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Apple SD Gothic Neo,Noto Sans KR,Apple Color Emoji,Segoe UI Emoji,sans-serif}
+    .wrap{max-width:1024px;margin:0 auto;padding:24px}
+    .hero{position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(16,185,129,.08));border:1px solid var(--muted)}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;padding:28px}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid var(--mint);color:var(--mint);border-radius:999px;font-weight:600;font-size:12px;letter-spacing:.2px}
+    h1{font-size:32px;line-height:1.25;margin:.2em 0 .4em} .lead{color:var(--ink2)}
+    .cta{display:inline-flex;gap:10px;margin-top:16px} .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid transparent;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--blue);color:#fff} .btn-ghost{background:#fff;border-color:var(--muted);color:var(--ink)}
+    .hero img{width:100%;height:auto;border-radius:16px;border:1px solid var(--muted)}
+    .section{margin-top:28px} .card{background:var(--card);border:1px solid var(--muted);border-radius:var(--radius);padding:20px}
+    .grid{display:grid;gap:16px} .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .kvs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px} .kv{background:#fff;border:1px solid var(--muted);border-radius:999px;padding:6px 10px;font-weight:600;font-size:13px}
+    .meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px} .meta .item{background:#fff;border:1px solid var(--muted);border-radius:14px;padding:14px} .item b{display:block;margin-bottom:6px}
+    .quote{font-style:italic;color:var(--ink2)} .footer{font-size:13px;color:#6B7280;margin:28px 0;text-align:center}
+    .iab{position:sticky;top:0;z-index:1000;background:#111827;color:#fff;padding:8px 12px;display:none}
+    .iab .row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+    .iab button,.iab a{background:#fff;color:#111827;border:none;padding:8px 10px;border-radius:10px;font-weight:700;text-decoration:none}
+    .small{font-size:12px;color:#6B7280}
+    @media (max-width:880px){.hero-inner{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr 1fr}}
+    @media (max-width:560px){.grid-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="iab" id="iab">
+    <div class="row">
+      <div>앱 내부 브라우저에서는 로딩이 느릴 수 있어요. <b>외부 브라우저로 열기</b>를 눌러주세요.</div>
+      <div style="display:flex;gap:6px">
+        <a id="openChrome" href="#">크롬으로 열기</a>
+        <button id="copyBtn">링크 복사</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="badge">🤖 AI 소모임 (밸런스형)</span>
+          <h1>AI, 어렵지 않게 재미있게</h1>
+          <p class="lead">기초 개념부터 최신 트렌드까지, <b>스터디 · 토론 · 실습</b>으로 함께 성장합니다.</p>
+          <div class="kvs">
+            <span class="kv">#딥러닝</span>
+            <span class="kv">#프롬프트엔지니어링</span>
+            <span class="kv">#프로젝트</span>
+          </div>
+          <div class="cta">
+            <a class="btn btn-primary" id="joinBtn" href="https://m.site.naver.com/1OsuE" target="_blank" rel="noopener">👉 바로 가입/소개 보기</a>
+            <a class="btn btn-ghost" href="#info">모임 정보 보기</a>
+          </div>
+          <p class="small">앱에서 열리지 않으면 상단의 <b>외부 브라우저로 열기</b>를 사용하세요.</p>
+        </div>
+        <div>
+          <img loading="lazy" alt="푸른 네트워크 일러스트" src="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>모임 소개</h2>
+        <p>AI 소모임은 <b>이해와 실습의 균형</b>을 중시합니다. 어려운 개념은 쉽게, 쉬운 예제는 깊이 있게. 함께 배우고 서로 가르치며 빠르게 성장해요.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>활동 스냅샷</h2>
+        <div class="grid grid-3">
+          <img loading="lazy" alt="스터디 장면" class="img" style="width:100%;border-radius:12px;border:1px solid var(--muted)" src="https://images.unsplash.com/photo-1523246191873-88e4e470d8d8?q=80&w=800&auto=format&fit=crop" />
+          <img loading="lazy" alt="토론 장면" class="img" style="width:100%;border-radius:12px;border:1px solid var(--muted)" src="https://images.unsplash.com/photo-1529336953121-adb118ad1e5b?q=80&w=800&auto=format&fit=crop" />
+          <img loading="lazy" alt="프로젝트 실습" class="img" style="width:100%;border-radius:12px;border:1px solid var(--muted)" src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?q=80&w=800&auto=format&fit=crop" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>참여자 한마디</h2>
+        <p class="quote">“실습 위주라 배운 걸 바로 써먹을 수 있어요. 처음이어도 친절하게 설명해줘서 부담 없었습니다.” – J님</p>
+      </div>
+    </section>
+
+    <section id="info" class="section">
+      <div class="card">
+        <h2>모임 정보</h2>
+        <div class="meta">
+          <div class="item"><b>주기</b>매주 토요일 오후 2시</div>
+          <div class="item"><b>장소</b>온라인(Zoom) + 오프라인(서울)</div>
+          <div class="item"><b>회비</b>1회 10,000원</div>
+          <div class="item"><b>참여</b>AI에 관심 있는 누구나</div>
+        </div>
+        <div class="cta" style="margin-top:14px">
+          <a class="btn btn-primary" href="https://m.site.naver.com/1OsuE" target="_blank" rel="noopener">👉 소개/가입 링크 열기</a>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">© 2025 AI 소모임 (밸런스형)</p>
+  </div>
+
+  <script>
+    (function(){
+      var ua = navigator.userAgent || "";
+      var isInApp = /(KAKAOTALK|FBAN|FBAV|Instagram|Line|NAVER|Daum|Whale|Everytime|Band)/i.test(ua) || /wv\)/i.test(ua);
+      var bar = document.getElementById('iab');
+      if(isInApp && bar){ bar.style.display = 'block'; }
+
+      var copyBtn = document.getElementById('copyBtn');
+      if(copyBtn){
+        copyBtn.addEventListener('click', async function(){
+          try{ await navigator.clipboard.writeText("https://m.site.naver.com/1OsuE"); copyBtn.textContent = '복사됨 ✅'; setTimeout(function(){ copyBtn.textContent='링크 복사'; }, 2000); }
+          catch(e){ alert('링크를 길게 눌러 복사해주세요.'); }
+        });
+      }
+
+      var openChrome = document.getElementById('openChrome');
+      if(openChrome){
+        var target = "https://m.site.naver.com/1OsuE";
+        var intentUrl = 'intent://' + target.replace(/^https?:\/\//,'') + '#Intent;scheme=https;package=com.android.chrome;end';
+        openChrome.setAttribute('href', intentUrl);
+      }
+
+      var join = document.getElementById('joinBtn');
+      if(join){
+        join.addEventListener('click', function(e){
+          var w = window.open(this.href, '_blank');
+          if(!w){ location.href = this.href; }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
